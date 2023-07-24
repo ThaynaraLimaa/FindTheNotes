@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --primary-color: #FF6600;
+    --secondary-color: #FFA366;
+    /* --tertiary-color: ; */
+    --hover-color: #FFC299;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --white: #f2f2f2;
+    --black: #000000;
+
+    /* Delete the ones you didn't need */
+    --warning-color: #DB537E;
+    --info-color: #1C4DB7;
+    --sucess: #42891B;
+
+    --main-font: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--white);
+    font-family: var(--main-font);
+    color: var(--black);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: var(--white);
+    /* width: 75%;  */
+    min-height: 95vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.page-title {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.page-title span {
+    color: var(--secondary-color);
+}
+
+
+.key-display {
+    background: var(--secondary-color);
+    width: 12.5rem;
+    height: 3.5rem;
+    margin: 2rem;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs-radio {
+    display: none;
+    position: relative;
+}
+
+.custom-checkbox{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 50%;
+
+    position: relative;
+    inset: 0;
+    cursor: pointer;
+}
+
+[type="radio"]:checked + label .custom-checkbox {
+    background-color: var(--secondary-color);
+    box-shadow:inset 0 0px 0px 2px var(--white);
+}
+
+
+.start-btn {
+    background-color: var(--secondary-color);
+    width: 9rem;
+    height: 3rem;
+    margin: 1em;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px var(--shadow-color);
+    color: var(--white);
+    font-size: 1.5rem;
+
+    cursor: pointer;
+}
+
+.start-btn:hover {
+    background-color: var(--hover-color);
+}
+
+.game-btns {
+    background-color: var(--secondary-color);
+    width: 5.7em;
+    height: 2.5em;
+    margin: 1em;
+    border: none;
+    border-radius: 15px;
+}
+
+.game-btns:hover {
+    background-color: var(--hover-color);
+}
+
+.end-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+
+.hide-element {
+    display: none;
+}
+
+/* footer {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 1rem;
+} */

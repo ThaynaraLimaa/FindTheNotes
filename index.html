@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/98c0876139.js" crossorigin="anonymous"></script>
+    <title>Find The Note</title>
+</head>
+<body>
+    <main>
+        <h1 class="page-title">Find the N<span><i class="fa-solid fa-compact-disc"></i></span>tes</h1>
+        <div class="record" data-current-record-display>Do your best!</div>
+        <div class="key-display" data-key-display>
+            Press Start
+        </div>
+        
+        <!-- Inicial Buttons -->
+        <div class="buttons-area" data-inicial-btns-container>
+            <div class="key-choise">
+                <input type="radio" name="keyChoise" id="naturalNotes" class="inputs-radio" checked>
+                <label for="naturalNotes" class="radio-labels">
+                    <span class="custom-checkbox"></span>
+                    Natural keys (7 keys)
+                </label>
+                <input type="radio" name="keyChoise" id="Allkeys" class="inputs-radio">
+                <label for="Allkeys" class="radio-labels">
+                    <span class="custom-checkbox"></span>
+                    All keys (12 keys)
+                </label>
+            </div>
+
+            <button class="start-btn" data-start-btn>Start</button>
+        </div>
+
+        <!-- Game Screen -->
+        <div class="game-painel hide-element" data-game-painel-container>
+            <div class="timer" data-game-timer>00:00</div>
+            <button class="game-btns" data-next-key-btn>Next</button>
+        </div>
+
+        <!-- End Screen -->
+        <div data-end-game-container class="end-game hide-element">
+            <p>Your Time: <span data-final-time-display></span></p>
+            <button class="game-btns" data-restart-btn>Restart</button>
+        </div>
+    </main>
+
+    <footer>
+        Created by <a href="https://github.com/thaynaralimaa" target="_blank">Thaynara Lima</a>
+    </footer>
+
+    <script src="app/gameTimer.js"></script>
+    <script src="app/main.js"></script>
+</body>
+</html>
