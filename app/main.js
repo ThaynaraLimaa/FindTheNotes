@@ -1,15 +1,16 @@
 const keysDisplay = document.querySelector('[data-key-display]')
-
 const inicialBtnsContainer = document.querySelector('[data-inicial-btns-container]')
 const startBtn = document.querySelector('[data-start-btn]')
 const notesChoiseRadio = document.getElementsByName('keyChoise')
-
 const gamePainelContainer = document.querySelector('[data-game-painel-container]')
 const nextKeyBtn = document.querySelector('[data-next-key-btn]')
-
 const endGameContainer = document.querySelector('[data-end-game-container]')
 const finalTimeDisplay = document.querySelector('[data-final-time-display]')
 const restartBtn = document.querySelector('[data-restart-btn]')
+
+const helpDialog = document.querySelector('[data-help-dialog-container]')
+const openHelpDialog = document.querySelector('[data-open-help-dialog]')
+const closeHelpDialog = document.querySelector('[data-close-help-dialog]')
 
 let musicNotes = []
 let notesShuffled 
@@ -43,6 +44,9 @@ nextKeyBtn.addEventListener('click', () => {
 })
 
 restartBtn.addEventListener('click', () => {location.reload()})
+
+openHelpDialog.addEventListener('click', () => {helpDialog.showModal()})
+closeHelpDialog.addEventListener('click', () => {helpDialog.close()})
 
 function hideElement(element) {element.classList.add('hide-element')}
 

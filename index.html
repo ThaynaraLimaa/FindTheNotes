@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +9,19 @@
     <script src="https://kit.fontawesome.com/98c0876139.js" crossorigin="anonymous"></script>
     <title>Find The Note</title>
 </head>
+
 <body>
+    <button class="help-btn" data-open-help-dialog>?</button>
+
     <main>
         <h1 class="page-title">Find the N<span><i class="fa-solid fa-compact-disc"></i></span>tes</h1>
+        <h2 class="page-subtitle">On your guitar</h2>
         <div class="record" data-current-record-display>Do your best!</div>
-        <div class="key-display" data-key-display>
-            Press Start
-        </div>
-        
+        <div class="key-display" data-key-display>Press Start</div>
+
         <!-- Inicial Buttons -->
-        <div class="buttons-area" data-inicial-btns-container>
-            <div class="key-choise">
+        <div data-inicial-btns-container>
+            <div>
                 <input type="radio" name="keyChoise" id="naturalNotes" class="inputs-radio" checked>
                 <label for="naturalNotes" class="radio-labels">
                     <span class="custom-checkbox"></span>
@@ -47,6 +50,25 @@
         </div>
     </main>
 
+    <dialog class="help-dialog" data-help-dialog-container>
+        <button class="x-btn" data-close-help-dialog>X</button>
+        <div>
+            <h2>How to use "Find The Notes":</h2>
+            <p>The goal is to help you <strong>memorize</strong> all the notes on your guitar! Follow these steps to a better practice:</p>
+            <ol>
+                <li>Take your guitar</li>
+                <li>Below, choose whether you want to practice with all the notes (natural and sharp notes) or only the natural notes.</li>
+                <li>Click on the "Start" button to begin the challenge.</li>
+                <li>When you click "Start," a musical note will be displayed (for example, A, B, C, etc.). You must findthat note on all 6 strings of your instrument.</li>
+                <li>After finding all the notes, click "Next" to advance to the next note and repeat the process until you find all 7 or 12 notes on each string.</li>
+                <li>In the end, you'll see how much time it took to find all the notes on the instrument's neck.</li>
+                <li>To improve, you can try to beat your own record until you can find all the notes effortlessly!</li>
+            </ol>
+            <p>So, are you ready to practice? Let's go!</p>
+        </div>
+
+    </dialog>
+
     <footer>
         Created by <a href="https://github.com/thaynaralimaa" target="_blank">Thaynara Lima</a>
     </footer>
@@ -54,4 +76,5 @@
     <script src="app/gameTimer.js"></script>
     <script src="app/main.js"></script>
 </body>
+
 </html>

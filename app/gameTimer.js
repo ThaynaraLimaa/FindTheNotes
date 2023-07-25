@@ -25,14 +25,11 @@ function updateRecordInLocalStorage(min, sec) {
             localStorage.setItem('currentRecord', JSON.stringify(newRecord))
             displayCurrentRecord()
             console.log('new record saved')
-        } else {
-            console.log('nao é um novo record')
-        }
+        } 
     } else {
         const newRecord = createRecordObject(min, sec)
         localStorage.setItem('currentRecord', JSON.stringify(newRecord))
         displayCurrentRecord()
-        console.log('record Criado')
     }
 }
 
