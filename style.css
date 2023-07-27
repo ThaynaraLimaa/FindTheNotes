@@ -14,6 +14,9 @@
     --shadow-color: rgba(0, 0, 0, 0.2);
     --white: #f2f2f2;
     --black: #000000;
+    --green: #008000;
+    
+    --warning-color: #DB537E;
 
     --main-font: 'Montserrat', sans-serif;
     --title-font-size: 3em;
@@ -64,6 +67,18 @@ main {
     margin-bottom: 1.5rem;
     letter-spacing: 2px;
     font-style: italic
+}
+
+.delete-record-btn {
+    background: none;
+    border: none;
+    font-size: var(--paragraph-font-size);
+    margin-top: .5em;
+    cursor: pointer;
+}
+
+.delete-record-btn:hover {
+    color: var(--warning-color);
 }
 
 .key-display {
@@ -219,6 +234,13 @@ main {
 .x-btn:hover {
     color: var(--white);
     transform: scale(1.2);
+}
+
+.new-time-record {
+    color: var(--green);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-style: italic;
 }
 
 .hide-element {

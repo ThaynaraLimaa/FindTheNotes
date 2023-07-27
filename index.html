@@ -16,7 +16,12 @@
     <main>
         <h1 class="page-title">Find the N<span><i class="fa-solid fa-compact-disc"></i></span>tes</h1>
         <h2 class="page-subtitle">On your guitar</h2>
-        <div class="record" data-current-record-display>Do your best!</div>
+        <div>
+            <p data-current-record-display>Do your best!</p>
+            <abbr title="delete your record info">
+                <button data-delete-record-info class="delete-record-btn"><i class="fa-solid fa-trash"></i></button>
+            </abbr>
+        </div>
         <div class="key-display" data-key-display>Press Start</div>
 
         <!-- Inicial Buttons -->
@@ -45,11 +50,12 @@
 
         <!-- End Screen -->
         <div data-end-game-container class="end-game hide-element">
-            <p>Your Time: <span data-final-time-display></span></p>
+            <p data-final-time-display></p>
             <button class="game-btns" data-restart-btn>Restart</button>
         </div>
     </main>
 
+    <!-- Help Text -->
     <dialog class="help-dialog" data-help-dialog-container>
         <button class="x-btn" data-close-help-dialog>X</button>
         <div>
