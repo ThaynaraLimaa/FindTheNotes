@@ -25,7 +25,7 @@ function updateRecordInLocalStorage(min, sec) {
             const newRecord = createRecordObject(min, sec)
             localStorage.setItem('currentRecord', JSON.stringify(newRecord))
             displayCurrentRecord()
-            displayFinalTime(true)
+            displayFinalTime(true) // true because it is new record
         } else {
             displayFinalTime(false)
         }

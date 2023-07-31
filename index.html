@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/98c0876139.js" crossorigin="anonymous"></script>
-    <title>Find The Note</title>
+    <title>Find The Notes</title>
 </head>
 
 <body>
@@ -22,20 +22,20 @@
                 <button data-delete-record-info class="delete-record-btn"><i class="fa-solid fa-trash"></i></button>
             </abbr>
         </div>
-        <div class="key-display" data-key-display>Press Start</div>
+        <div class="note-display" data-note-display>Press Start</div>
 
         <!-- Inicial Buttons -->
         <div data-inicial-btns-container>
-            <div>
-                <input type="radio" name="keyChoise" id="naturalNotes" class="inputs-radio" checked>
+            <div class="radios-container">
+                <input type="radio" name="noteChoice" id="naturalNotes" class="inputs-radio" checked>
                 <label for="naturalNotes" class="radio-labels">
                     <span class="custom-checkbox"></span>
-                    Natural keys (7 keys)
+                    Natural Notes (7 Notes)
                 </label>
-                <input type="radio" name="keyChoise" id="Allkeys" class="inputs-radio">
-                <label for="Allkeys" class="radio-labels">
+                <input type="radio" name="noteChoice" id="AllNotes" class="inputs-radio">
+                <label for="AllNotes" class="radio-labels">
                     <span class="custom-checkbox"></span>
-                    All keys (12 keys)
+                    All Notes (12 Notes)
                 </label>
             </div>
 
@@ -45,7 +45,7 @@
         <!-- Game Screen -->
         <div class="game-painel hide-element" data-game-painel-container>
             <div class="timer" data-game-timer>00:00</div>
-            <button class="game-btns" data-next-key-btn>Next</button>
+            <button class="game-btns" data-next-note-btn>Next</button>
         </div>
 
         <!-- End Screen -->

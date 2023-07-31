@@ -1,10 +1,10 @@
-const keysDisplay = document.querySelector('[data-key-display]')
+const noteDisplay = document.querySelector('[data-note-display]')
 const inicialBtnsContainer = document.querySelector('[data-inicial-btns-container]')
 const startBtn = document.querySelector('[data-start-btn]')
-const notesChoiseRadio = document.getElementsByName('keyChoise')
+const notesChoiseRadio = document.getElementsByName('noteChoice')
 
 const gamePainelContainer = document.querySelector('[data-game-painel-container]')
-const nextKeyBtn = document.querySelector('[data-next-key-btn]')
+const nextNoteBtn = document.querySelector('[data-next-note-btn]')
 
 const endGameContainer = document.querySelector('[data-end-game-container]')
 const finalTimeDisplay = document.querySelector('[data-final-time-display]')
@@ -21,8 +21,8 @@ let notesCounter = 0
 startBtn.addEventListener('click', () => {
     setNotes()
 
-    // Show the first key
-    keysDisplay.innerHTML = `${notesShuffled[0]}`
+    // Shows the first note
+    noteDisplay.innerHTML = `${notesShuffled[0]}`
     notesCounter += 1 
 
     hideElement(inicialBtnsContainer)
@@ -33,11 +33,11 @@ startBtn.addEventListener('click', () => {
     startTimer()
 })
 
-nextKeyBtn.addEventListener('click', () => {
-    keysDisplay.innerHTML = `${notesShuffled[notesCounter]}`
+nextNoteBtn.addEventListener('click', () => {
+    noteDisplay.innerHTML = `${notesShuffled[notesCounter]}`
     
     if (notesCounter == notesShuffled.length) {
-        hideElement(keysDisplay)
+        hideElement(noteDisplay)
         hideElement(gamePainelContainer)
         showElement(endGameContainer)
         showElement(currentRecordDisplay)
